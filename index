@@ -1,0 +1,165 @@
+from PyQt5 import QtCore, QtGui, QtWidgets;
+import React from "react";
+
+<class > TrainingRoomReseravation < /class >
+   <widget class = "QDialog" name = "TrainingRoomReseravation" >
+       <property name = "geometry" >
+          <rect >
+               <x > 0 < /x >
+               <y > 0 < /y >
+               <width > 584 < /width >
+               <height > 450 < /height >
+           </rect >
+       </property >
+       <property name = "minimumSize">
+          <size >
+               <width > 450</width>
+               <height > 400</height>
+           </size >
+       </property >
+       <property name = "maximumSize">
+          <size >
+               <width > 600</width>
+               <height > 450</height>
+           </size >
+       </property >
+       <property name = "windowTitle">
+           <string > Dialog</string>
+       </property >
+       <widget class = "QWidget" name="horizontalLayoutWidget">
+           <property name = "geometry">
+              <rect >
+                   <x > 0</x>
+                   <y > 0</y>
+                   <width > 566</width>
+                   <height > 310</height>
+               </rect >
+           </property >
+           <layout class = "QHBoxLayout" name="horizontalLayout">
+              <item >
+                   <layout class = "QFormLayout" name="formLayout">
+                       <property name = "horizontalSpacing">
+                           <number > 4</number>
+                       </property >
+                       <property name = "leftMargin">
+                           <number > 11</number>
+                       </property >
+                       <item row = "5" column="0">
+                           <widget class = "QLabel" name="lbl_reserdate">
+                               <property name = "text">
+                                   <string > Reservation Date</string>
+                               </property >
+                           </widget >
+                       </item >
+                       <item row = "5" column="1">
+                           <widget class = "QCalendarWidget" name="calendar_resrev_date">
+                               <property name = "minimumSize">
+                                  <size >
+                                       <width > 483</width>
+                                       <height > 0</height>
+                                   </size >
+                               </property >
+                           </widget >
+                       </item >
+                       <item row = "6" column="0">
+                           <widget class = "QLabel" name="lbl_hours">
+                               <property name = "text">
+                                   <string > Hours</string>
+                               </property >
+                           </widget >
+                       </item >
+                       <item row = "6" column="1">
+                           <widget class = "QSpinBox" name="sbx_hours"/>
+                       </item >
+                       <item row = "8" column="0">
+                           <widget class = "QLabel" name="lbl_room">
+                               <property name = "text">
+                                   <string > Room</string>
+                               </property >
+                           </widget >
+                       </item >
+                       <item row = "8" column="1">
+                           <widget class = "QComboBox" name="comboBox">
+                              <item >
+                                   <property name = "text">
+                                       <string > Room 1</string>
+                                   </property >
+                               </item >
+                               <item >
+                                   <property name = "text">
+                                       <string > Room 2</string>
+                                   </property >
+                               </item >
+                               <item >
+                                   <property name = "text">
+                                       <string > Room 3</string>
+                                   </property >
+                               </item >
+                               <item >
+                                   <property name = "text">
+                                       <string > Room 4</string>
+                                   </property >
+                               </item >
+                           </widget >
+                       </item >
+                   </layout >
+               </item >
+           </layout >
+       </widget >
+       <widget class = "QWidget" name="formLayoutWidget_2">
+           <property name = "geometry">
+              <rect >
+                   <x > 0</x>
+                   <y > 250</y>
+                   <width > 571</width>
+                   <height > 98</height>
+               </rect >
+           </property >
+           <layout class = "QFormLayout" name="lay_ver_main">
+               <property name = "horizontalSpacing">
+                   <number > 23</number>
+               </property >
+               <property name = "verticalSpacing">
+                   <number > 20</number>
+               </property >
+               <property name = "leftMargin">
+                   <number > 7</number>
+               </property >
+               <item row = "1" column="0">
+                   <widget class = "QLabel" name="Deatils">
+                       <property name = "text">
+                           <string > Details</string>
+                       </property >
+                   </widget >
+               </item >
+               <item row = "1" column="1">
+                   <widget class = "QTextEdit" name="det_summ">
+                       <property name = "maximumSize">
+                          <size >
+                               <width > 800</width>
+                               <height > 800</height>
+                           </size >
+                       </property >
+                       <property name = "readOnly">
+                           <bool > true</bool>
+                       </property >
+                   </widget >
+               </item >
+           </layout >
+       </widget >
+       <widget class = "QPushButton" name="btn_reserv">
+           <property name = "geometry">
+              <rect >
+                   <x > 450</x>
+                   <y > 390</y>
+                   <width > 111</width>
+                   <height > 20</height>
+               </rect >
+           </property >
+           <property name = "text">
+               <string > Reservar</string>
+           </property >
+       </widget >
+   </widget >
+
+
